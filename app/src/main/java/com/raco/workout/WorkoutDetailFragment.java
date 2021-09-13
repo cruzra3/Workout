@@ -11,10 +11,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class WorkoutDetailFragment extends Fragment {
+
+    private long workoutId;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_workout_detail, container, false);
+    }
+
+    public void setWorkoutId(long id){
+        this.workoutId = id;
     }
 }
