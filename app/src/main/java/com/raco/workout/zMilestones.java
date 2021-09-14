@@ -6,4 +6,7 @@ public class zMilestones {
     //Test the app displays the fragment with placeholders for title and description
     //Test the app displays the actual workout title and description instead of
     //  placeholders
+    //Test the app displays the list of workouts in the first layout instead of the button.
+    //  there is still a problem, when you click a workout nothing happens.
 }
+
