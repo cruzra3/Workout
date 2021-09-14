@@ -8,5 +8,7 @@ public class zMilestones {
     //  placeholders
     //Test the app displays the list of workouts in the first layout instead of the button.
     //  there is still a problem, when you click a workout nothing happens.
+    //Test the app responds to clicks on the list of workouts and displays the detail info
+    //  of the selected workout.
 }
 
