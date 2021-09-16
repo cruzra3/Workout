@@ -11,5 +11,6 @@ public class zMilestones {
     //Test the app responds to clicks on the list of workouts and displays the detail info
     //  of the selected workout.
     //Test TempActivity displays StopwatchFragment succesfully.
+    //Test final.
 }
 
