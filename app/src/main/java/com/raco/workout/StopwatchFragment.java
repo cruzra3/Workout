@@ -103,19 +103,20 @@ public class StopwatchFragment extends Fragment implements View.OnClickListener 
     //Sets the number of seconds on the timer.
     private void runTimer(View view) {
         final TextView timeView = (TextView) view.findViewById(R.id.time_view);
-        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+        final Handler handler = new Handler();
+        handler.post(new Runnable() {
             @Override
             public void run() {
                 int hours = seconds/3600;
                 int minutes = (seconds%3600)/60;
                 int secs = seconds%60;
                 String time = String.format(Locale.getDefault(),
-                        "%d:%02d:%02d", hours, minutes, secs);
-                timeView.setText(time);
+                        "%d:%02d:%02d", hours, minutes, secs); timeView.setText(time);
                 if (running) {
                     seconds++;
                 }
+                handler.postDelayed(this, 1000);
             }
-        }, 1000);
+        });
     }
 }
